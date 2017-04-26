@@ -17,19 +17,14 @@ function ItunesController() {
       songTemplate += `
         <div class="container">
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-xs-4">
               <div class="well">
-                <div class="col-xs-2">
                   <img src ="${song.albumArt}">
-                </div class="col-xs-2">
                   <h4>${song.artist}</h4>
-                <div class="col-xs-2">
-                  <h4>${song.collection}</h4>
-                </div class="col-xs-2">
                   <h4>${song.title}</h4>
-                <div class="col-xs-2">
+                  <h4>${song.collection}</h4>
                   <h4>${song.price}</h4>
-                </div>
+                  <audio controls = "controls" preload="none"><source src="${song.preview}" type="audio/mp4"/></audio>
               </div>
             </div>
           </div>
@@ -39,7 +34,6 @@ function ItunesController() {
     draw.innerHTML = songTemplate
 
   }
-
 }
 
 
