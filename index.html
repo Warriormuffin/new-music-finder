@@ -1,23 +1,40 @@
 <html>
-  <head>
-    <title>Itunes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
-  </head>
-  <body>
-      <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
-        <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-        <div class="form-group">
-          <input type="text" class="form-control" name="artist" placeholder="Artist Name"/>
-          <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-        </div>
-      </form>
+
+<head>
+  <title>Itunes</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="title animated bounceIn" class="">
+        <p>Music Finder</p>
+    </div>
+
+    <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
+      <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+      <div class="form-group animated bounceIn">
+        <input type="text" class="form-control" name="artist" required/> <br> <br>
+        <button type="submit" style="display: none;"</button>
+      </div>
+    </form>
+
+    <div>
       <div class="songs" id="songs">
 
       </div>
+    </div>
+  </div>
 
-      <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-      <script src="itunes-service.js"></script>
-      <script src="app.js"></script>
-  </body>
+  <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script src="itunes-service.js"></script>
+  <script src="app.js"></script>
+</body>
+
 </html>
+
+<!--class="btn btn-primary btn-lg" id="get-music-button">Get Music-->

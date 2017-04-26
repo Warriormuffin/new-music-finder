@@ -8,27 +8,21 @@ function ItunesController() {
   }
 
   function drawSongs(songList) {
-    console.log(songList);
     var draw = document.getElementById('songs');
     var songTemplate = "";
-    debugger
     for (var i = 0; i < songList.length; i++) {
       var song = songList[i];
       songTemplate += `
-        <div class="container">
-          <div class="row">
             <div class="col-xs-4">
-              <div class="well">
+              <div class="well animated bounceInUp">
                   <img src ="${song.albumArt}">
                   <h4>${song.artist}</h4>
-                  <h4>${song.title}</h4>
+                  <h4 id="title" onclick="playSong(${song.id})">${song.title}</h4>
                   <h4>${song.collection}</h4>
-                  <h4>${song.price}</h4>
-                  <audio controls = "controls" preload="none"><source src="${song.preview}" type="audio/mp4"/></audio>
+                  <h4>$${song.price}</h4>
+                  <audio id="${song.id}" controls = "controls" preload="none"><source src="${song.preview}" type="audio/mp4"/></audio>
               </div>
             </div>
-          </div>
-        </div>
         `
     }
     draw.innerHTML = songTemplate
@@ -36,6 +30,31 @@ function ItunesController() {
   }
 }
 
+function playSong(id) {
+  var audios = document.getElementById(id);
+  if (audios.paused == false) {
+    audios.pause()
+    return
+  }
+  audios.play();
+
+}
+
+document.addEventListener('play', function (e) {
+  var audios = document.getElementsByTagName('audio');
+  for (var i = 0; i < audios.length; i++) {
+    if (audios[i] != e.target) {
+      audios[i].pause();
+    }
+  }
+}, true)
+
+$('#h1').addClass('animated bounceOutLeft');
+
+
+
+
 
 
 var itunesCtrl = new ItunesController()
+

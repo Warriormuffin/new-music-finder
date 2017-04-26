@@ -1,3 +1,65 @@
 .songs{
   text-align: center;
 }
+
+form{
+  text-align: center;
+  margin-top: 40px;
+}
+
+.form-group input{
+  text-align: center;
+  border: none;
+  background-color: rgba(0, 0, 0, .5);
+  color: lightblue;
+  height: 30px;
+  width: 500px;
+}
+
+button{
+  background-color: lightblue;
+}
+
+
+body{
+    background-image: url(https://templeofara.net/wp-content/uploads/2015/07/wheat-field.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+
+}
+
+.title{
+  text-align: center;
+  color: lightblue;
+  font-family: 'Lobster', Georgia, Times, serif;
+	font-size: 150px;
+	line-height: 100px;
+  margin-top: 200px;
+}
+
+.well:hover{
+  background-color: rgba(255,255,255, .8);
+
+}
+
+.well{
+  height: 257px;
+  width: 350px ;
+}
+
+input{
+  background-color: rgba(255,255,255, .5);
+}
+
+button{
+  color: lightblue ;
+
+}
+
+
+
