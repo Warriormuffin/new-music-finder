@@ -4,22 +4,24 @@
   <title>Itunes</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <div class="container">
 
-    <div class="title animated bounceIn" class="">
+    <div class="title animated bounceInDown" class="">
         <p>Music Finder</p>
     </div>
 
     <form class="form-inline" onsubmit="itunesCtrl.getMusic(event)">
       <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-      <div class="form-group animated bounceIn">
-        <input type="text" class="form-control" name="artist" required/> <br> <br>
-        <button type="submit" style="display: none;"</button>
+      <div class="form-group animated bounceInDown">
+        <input type="text" class="form-control" name="artist" required/>
+        <button type="submit" class="btn btn-default">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        </button>
       </div>
     </form>
 

@@ -11,15 +11,19 @@ form{
   text-align: center;
   border: none;
   background-color: rgba(0, 0, 0, .5);
-  color: lightblue;
+  color: rgba(78, 184, 255, 1);
   height: 30px;
   width: 500px;
 }
 
-button{
-  background-color: lightblue;
+.btn-default:hover{
+  opacity: .7;
 }
 
+.btn-default{
+  background-color: rgba(78, 184, 255, 1);
+  border: none;
+}
 
 body{
     background-image: url(https://templeofara.net/wp-content/uploads/2015/07/wheat-field.jpg);
@@ -35,9 +39,9 @@ body{
 
 .title{
   text-align: center;
-  color: lightblue;
-  font-family: 'Lobster', Georgia, Times, serif;
-	font-size: 150px;
+  color: rgba(78, 184, 255, 1);
+  font-family: 'Pacifico', cursive;
+	font-size: 120px;
 	line-height: 100px;
   margin-top: 200px;
 }
