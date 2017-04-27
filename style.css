@@ -10,8 +10,8 @@ form{
 .form-group input{
   text-align: center;
   border: none;
-  background-color: rgba(0, 0, 0, .5);
-  color: rgba(78, 184, 255, 1);
+  background-color: rgba(78, 184, 255, .3);
+  color: black;
   height: 30px;
   width: 500px;
 }
@@ -27,6 +27,7 @@ form{
 
 body{
     background-image: url(https://templeofara.net/wp-content/uploads/2015/07/wheat-field.jpg);
+    /*background-image: url(https://unsplash.it/g/1920/1080/?random);*/
     background-size: cover;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -51,9 +52,8 @@ body{
 
 }
 
-.well{
-  height: 257px;
-  width: 350px ;
+.form-group input:focus{
+  background-color: rgba(78, 184, 255, .3);
 }
 
 input{
@@ -64,6 +64,12 @@ button{
   color: lightblue ;
 
 }
+
+.container{
+  perspective: 800px;
+}
+
+
 
 
 
