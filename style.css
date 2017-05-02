@@ -10,10 +10,11 @@ form{
 .form-group input{
   text-align: center;
   border: none;
-  background-color: rgba(78, 184, 255, .3);
+  background-color: rgba(78, 184, 255, .8);
   color: black;
   height: 30px;
   width: 500px;
+  color: whitesmoke;
 }
 
 .btn-default:hover{
@@ -65,9 +66,6 @@ button{
 
 }
 
-.container{
-  perspective: 800px;
-}
 
 
 

@@ -18,7 +18,7 @@ function ItunesController() {
                   <img src ="${song.albumArt}">
                   <h4>${song.artist}</h4>
                   <h4 id="title" onclick="playSong(${song.id})">${song.title}</h4>
-                  <marquee>${song.collection}</marqueeç>
+                  <marquee>${song.collection}</marquee>
                   <h4>$${song.price}</h4>
                   <audio id="${song.id}" controls = "controls" preload="none"><source src="${song.preview}" type="audio/mp4"/></audio>
               </div>
